@@ -37,6 +37,19 @@ $(document).ready(function(){
     }
 
 
+    if($(window).innerWidth() < 575){
+        if($('.products_slider > div').length >1){
+            $('.products_slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                dots:false,
+            });
+        }
+    }
+
+
+
 
     /*
 
