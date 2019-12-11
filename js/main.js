@@ -80,6 +80,13 @@ $(document).ready(function(){
 
 
 
+    $('.read_more').click(function(){
+        $(this).hide();
+        $(this).prev().slideDown();
+    });
+
+
+
     /*
 
 
