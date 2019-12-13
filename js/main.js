@@ -79,6 +79,37 @@ $(document).ready(function(){
     }
 
 
+    if($('.akcii_slider2 > div').length >4){
+        $('.akcii_slider2').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+            dots:false,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 575,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+    }
+
+
+
 
     $('.read_more').click(function(){
         $(this).hide();
