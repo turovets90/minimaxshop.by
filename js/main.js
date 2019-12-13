@@ -87,6 +87,33 @@ $(document).ready(function(){
 
 
 
+    if($(window).innerWidth() < 1200){
+        if($('.related_posts > div').length >3){
+            $('.related_posts').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: true,
+                dots:false,
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 575,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        }
+    }
+
+
+
     /*
 
 
