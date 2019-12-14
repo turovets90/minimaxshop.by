@@ -110,12 +110,12 @@
     <section class="actual_collections pt-0"><img class="section_img_absolute" src="img/Group226.png" style="left: 0;top: 16%;"/>
       <div class="container position-relative">
         <h1 class="mb-xl-5">Магазины</h1>
-        <div class="catalog_list mobile_visible">
+        <div class="catalog_list mobile_visible w-100">
           <div class="c_item w-100">
             <div class="text p-0">
+              <picture class="mb-4"><img src="img/image6.png"/></picture>
               <div class="tag">Сеть магазинов</div>
               <div class="title mb-4 pb-1">МINIMAX</div>
-              <picture class="mb-4"><img src="img/image6.png"/></picture>
               <div class="desc pb-0">
                 <p><strong>Сеть магазинов MINIMAX для житейски-мудрых и разумных людей.</strong></p>
                 <ul>
@@ -124,6 +124,8 @@
                   <li>3. Зачем платить за каждый 5-й товар, если можно получить его бесплатно?</li>
                   <li>4. Зачем, покупать сомнительные товары и экспериментировать на здоровье своих близких?</li>
                 </ul>
+                <picture class="mb-4 mt-5"><img src="img/image6.png"/></picture>
+                <picture class="mb-4"><img src="img/image6.png"/></picture>
               </div>
             </div>
           </div>
@@ -159,22 +161,146 @@
         </div>
       </div>
     </section>
-    <section class="home_shops"><img class="img_left" src="img/h_imgleft.png"/><img class="img_right" src="img/h_imgright.svg"/><img class="img_mobile1" src="img/h_img_mobile1.svg"/><img class="img_mobile2" src="img/h_img_mobile.png"/>
-      <div class="container position-relative">
-        <div class="hs_desc">
+    <section class="shops">
+      <div class="container">
+        <h2 class="mb-xl-0">Адреса магазинов</h2>
+        <div class="shops_header_row">
           <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-xl-4">
-              <div class="sub_title">Посетите</div>
-              <div class="title">Наши магазины</div>
+            <div class="col-12 col-sm-12 col-md-12 col-xl-5 c_left">
+              <div class="shops_tab">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#map_content" id="map" role="tab" data-toggle="tab" aria-controls="map_content" aria-expanded="true">На карте</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#list_content" id="list" role="tab" data-toggle="tab" aria-controls="list_content" aria-expanded="true">Списком</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-xl-4">
-              <p>Найдите ближайшие к вам магазины и отправьтесь за покупками прямо сейчас!</p>
+            <div class="col-12 col-sm-12 col-md-12 col-xl-7 c_right">
+              <div class="search_map">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-md-6 col-xl-6">
+                    <div class="custom_select">
+                      <select class="form-control">
+                        <option>Страна</option>
+                        <option>Страна 1</option>
+                        <option>Страна 2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-6 col-xl-6">
+                    <div class="custom_select">
+                      <select class="form-control">
+                        <option>Город</option>
+                        <option>Город 1</option>
+                        <option>Город 2</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-xl-4"><a class="btn_custom" href="#"><span>ближайшие магазины</span></a></div>
           </div>
         </div>
       </div>
     </section>
+    <div class="shops_body">
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="map_content" role="tabpanel" aria-labelledby="map">
+          <div id="shops_map"></div>
+        </div>
+        <div class="tab-pane fade" id="list_content" role="tabpanel" aria-labelledby="list">
+          <div class="shops_list">
+            <div class="shop_list_item">
+              <div class="container">
+                <div class="flex">
+                  <div class="left_col">
+                    <div class="icon"><img src="img/map_icon.svg"/></div>
+                    <div class="location"><strong>ТЦ "Atakent Mall"</strong><span>г. Минск, ул. Тимирязева, д.42</span></div>
+                  </div>
+                  <div class="center_col">
+                    <div class="phone"><a href="tel:+375 (17) 364-26-11">+375 (17) 364-26-11</a></div>
+                    <div class="work"><span>пн.-пт.: 10:00-22:00</span><span>сб-вс.: 10:00-22:00</span></div>
+                  </div>
+                  <div class="right_col">
+                    <button class="show_in_map">Смотреть на карте</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop_list_item">
+              <div class="container">
+                <div class="flex">
+                  <div class="left_col">
+                    <div class="icon"><img src="img/map_icon.svg"/></div>
+                    <div class="location"><strong>ТЦ "Atakent Mall"</strong><span>г. Минск, ул. Тимирязева, д.42</span></div>
+                  </div>
+                  <div class="center_col">
+                    <div class="phone"><a href="tel:+375 (17) 364-26-11">+375 (17) 364-26-11</a></div>
+                    <div class="work"><span>пн.-пт.: 10:00-22:00</span><span>сб-вс.: 10:00-22:00</span></div>
+                  </div>
+                  <div class="right_col">
+                    <button class="show_in_map">Смотреть на карте</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop_list_item">
+              <div class="container">
+                <div class="flex">
+                  <div class="left_col">
+                    <div class="icon"><img src="img/map_icon.svg"/></div>
+                    <div class="location"><strong>ТЦ "Atakent Mall"</strong><span>г. Минск, ул. Тимирязева, д.42</span></div>
+                  </div>
+                  <div class="center_col">
+                    <div class="phone"><a href="tel:+375 (17) 364-26-11">+375 (17) 364-26-11</a></div>
+                    <div class="work"><span>пн.-пт.: 10:00-22:00</span><span>сб-вс.: 10:00-22:00</span></div>
+                  </div>
+                  <div class="right_col">
+                    <button class="show_in_map">Смотреть на карте</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop_list_item">
+              <div class="container">
+                <div class="flex">
+                  <div class="left_col">
+                    <div class="icon"><img src="img/map_icon.svg"/></div>
+                    <div class="location"><strong>ТЦ "Atakent Mall"</strong><span>г. Минск, ул. Тимирязева, д.42</span></div>
+                  </div>
+                  <div class="center_col">
+                    <div class="phone"><a href="tel:+375 (17) 364-26-11">+375 (17) 364-26-11</a></div>
+                    <div class="work"><span>пн.-пт.: 10:00-22:00</span><span>сб-вс.: 10:00-22:00</span></div>
+                  </div>
+                  <div class="right_col">
+                    <button class="show_in_map">Смотреть на карте</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop_list_item">
+              <div class="container">
+                <div class="flex">
+                  <div class="left_col">
+                    <div class="icon"><img src="img/map_icon.svg"/></div>
+                    <div class="location"><strong>ТЦ "Atakent Mall"</strong><span>г. Минск, ул. Тимирязева, д.42</span></div>
+                  </div>
+                  <div class="center_col">
+                    <div class="phone"><a href="tel:+375 (17) 364-26-11">+375 (17) 364-26-11</a></div>
+                    <div class="work"><span>пн.-пт.: 10:00-22:00</span><span>сб-вс.: 10:00-22:00</span></div>
+                  </div>
+                  <div class="right_col">
+                    <button class="show_in_map">Смотреть на карте</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop_list_item last">
+              <div class="container">Показано:  6 магазинов</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="container">
         <div class="row footer_row">
