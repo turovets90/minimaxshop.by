@@ -3294,8 +3294,8 @@ strong{
 
 
 
-.stocks_list{
-  .stocks_list_item{
+.stocks_list, .events_list{
+  .stocks_list_item, .events_list_item{
     margin-bottom: 90px;
     @media (max-width:1200px){
         margin-bottom: 60px;
@@ -3560,6 +3560,9 @@ strong{
         padding-left: 30px;
         position: relative;
         border:0;
+        &:hover, &:focus{
+          text-decoration: none;
+        }
         &:before{
           .b_a();
           left: 0;
