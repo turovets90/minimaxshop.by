@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+
+    $(document).ready(function(){
+        $('.file').filestyle({
+            text : 'Прикрепить файл',
+            dragdrop: false,
+        });
+    });
+
     $('.mm_btn').on('click',function () {
         $(this).toggleClass('act');
         $('.main_menu').toggleClass('open');
