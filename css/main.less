@@ -1145,6 +1145,7 @@ nav{
   font-size: 14px;
   font-family: @Segoe_Bold;
   text-transform: uppercase;
+  border:0;
   &:hover, &:focus{
     color: #fff;
     text-decoration: none;
@@ -3359,6 +3360,78 @@ strong{
       .time{
         font-size: 16px;
         color: #C8C8C8;
+      }
+    }
+  }
+}
+
+
+
+.jobs_group{
+  padding-bottom: 45px;
+  .jobs_title{
+    font-family: @Segoe_Bold;
+    font-size: 28px;
+    color: #323232;
+    text-transform: uppercase;
+    margin-bottom: 47px;
+    @media (max-width:1200px){
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    @media (max-width:767px){
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    @media (max-width:575px){
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+  .jobs_list{
+    .jobs_item{
+      margin-bottom: 45px;
+      @media (max-width:1200px){
+        margin-bottom: 30px;
+      }
+      @media (max-width:767px){
+        margin-bottom: 20px;
+      }
+      @media (max-width:575px){
+        margin-bottom: 10px;
+      }
+      .flex();
+      .ai-center();
+      .wrap();
+      > div{
+        width: 50%;
+        @media (max-width:575px){
+          width: 100%;
+        }
+        &.text{
+          font-size: 28px;
+          color: #000000;
+          @media (max-width:1200px){
+            font-size: 24px;
+          }
+          @media (max-width:767px){
+            font-size: 20px;
+          }
+          @media (max-width:575px){
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+        }
+        &.btn_block{
+          .flex();
+          @media (min-width:576px){
+            .j-end();
+          }
+          .btn_custom{
+            height: 40px;
+            .border-radius(55px);
+          }
+        }
       }
     }
   }
