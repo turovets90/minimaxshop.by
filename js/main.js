@@ -163,6 +163,25 @@ $(document).ready(function(){
 
 
 
+    if($('.gallery_slider > div').length >2){
+        $('.gallery_slider').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: true,
+            dots:false,
+            responsive: [
+                {
+                    breakpoint: 575,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+    }
+
+
+
     ymaps.ready(init);
 
     function init () {
