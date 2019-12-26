@@ -2593,7 +2593,7 @@ body{
 
 
 
-.akcii_slider, .related_posts, .akcii_slider2{
+.akcii_slider, .related_posts, .akcii_slider2, .products_slider{
   .slick-arrow{
     top: -113px;
     z-index: 2;
@@ -2637,6 +2637,24 @@ body{
     }
   }
 
+}
+
+
+.products_slider{
+  @media (max-width:575px){
+    .slick-arrow{
+      top: 50%;
+
+    }
+    .slick-next{
+      right:0;
+    }
+
+    .slick-prev{
+      left: 0;
+      right: initial;
+    }
+  }
 }
 
 
