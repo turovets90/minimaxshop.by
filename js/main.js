@@ -152,6 +152,17 @@ $(document).ready(function(){
     }
 
 
+    $('.jobs_item').each(function(){
+        var j_text=$(this).find('.text');
+        var j_item_desc=$(this).find('.jobs_item_desc');
+        $(j_text).click(function(){
+            $(j_text).toggleClass('act');
+            $(j_item_desc).slideToggle();
+        });
+    });
+
+
+
     ymaps.ready(init);
 
     function init () {
